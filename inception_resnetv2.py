@@ -215,8 +215,7 @@ class Block8(chainer.Chain):
 
 class InceptionResNetV2(chainer.Chain):
 
-    def __init__(self, num_classes=55):
-        self.input_space = None
+    def __init__(self, num_classes=1000):
 
         super(InceptionResNetV2, self).__init__()
         with self.init_scope():
